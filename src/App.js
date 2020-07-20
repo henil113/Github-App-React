@@ -10,11 +10,13 @@ class  Card extends Component{
     const profile = this.props;
     
     return (
-    <div>
-    <div className="info"/>
-    <img  className="img9" src={profile.avatar_url}/> 
-    <div className="name">{profile.name}</div>
-    <div className="company">{profile.company}</div>  
+      <div className="card-wrap">
+      <img  className="img9" src={profile.avatar_url}/> 
+      <div className="info">
+      <div className="name">{profile.name}</div>
+      < div className="company">{profile.company}
+      </div>  
+    </div>
     </div> 
     );
    }

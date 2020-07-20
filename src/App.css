@@ -9,30 +9,23 @@
   font-size: 1.5rem;
   margin-bottom: 1rem;
 } 
-.info {
+.card-wrap{
+  margin: 1rem;
+}
+.info{
   display: inline-block;
-  margin-left: 22px;
+  margin-left: 10px
 }
-  .img9{
-  width: 75px; 
+
+.img9{
+  width: 75px;
+  height: 75px;
+  vertical-align: top;
 }
-.form {
-	border: thin solid #ddd;
-  background-color: #fbfbfb;
-  padding: 2rem;
-  margin-bottom: 2rem;
-  display: flex;
-  justify-content: center;
-}
-  .name{
+
+.name{
   font-size: 1.25rem;
   font-weight: bold;
-  margin-left: 144px;
-  margin-top: -82px;
-}
-  .company{
-  font-size: medium;
-  margin-left: 144px;  
 }
 
 .App-logo {
