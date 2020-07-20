@@ -10,7 +10,9 @@ class  Card extends Component{
     const profile = this.props;
     
     return (
+      
       <div className="card-wrap">
+       
       <img  className="img9" src={profile.avatar_url}/> 
       <div className="info">
       <div className="name">{profile.name}</div>
@@ -22,7 +24,7 @@ class  Card extends Component{
    }
 }
 class Form extends Component{
- 
+  
   state={userName:''};
   handleSubmit= async (event)=>{
     event.preventDefault();
@@ -35,8 +37,10 @@ class Form extends Component{
   render() {
   	return (
       <form onSubmit={this.handleSubmit}>
+        <div className="form9">
     	  <input type="text" value = {this.state.userName} onChange = {event=>this.setState({userName:event.target.value})}placeholder="GitHub username" required/>
         <button>Add card</button>
+        </div>
     	</form>
       
     );
@@ -54,6 +58,7 @@ addnewprofile=(profdata)=>{
   };
   render(){
     return (<div>
+      <header>Github Cards App</header>
       <Form onSubmit={this.addnewprofile}/>
       <CardList profiles={this.state.profiles}/>
       </div>
